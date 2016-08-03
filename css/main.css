@@ -1,0 +1,28 @@
+a.todo {
+    color: #a00;
+}
+
+a.current {
+    font-weight: bold;
+}
+
+h4 {
+    font: 18px Arial;
+    border-bottom: 1px solid black;
+}
+
+.page-content {
+    background: #fff;
+}
+
+@media (min-width: 768px) {
+    .page-content {
+        padding: 24px 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        padding: 0;
+    }
+}

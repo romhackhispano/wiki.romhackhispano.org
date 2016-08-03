@@ -1,0 +1,71 @@
+- name: Romhack Hispano
+  link: http://foro.romhackhispano.org/
+  active: true
+
+- name: Traducciones Magno
+  link: http://magno.romhackhispano.org/
+  active: true
+
+- name: Sayans Traductions
+  link: http://sayans.romhackhispano.org/
+  active: true
+
+- name: Fortaleza Romhack
+  link: http://fortaleza.romhackhispano.org/
+  active: true
+
+- name: Traducciones Lukas
+  link: http://lukas.romhackhispano.org/
+  active: true
+
+- name: Tales Translations
+  link: http://www.tales-tra.com/
+  active: true
+
+- name: Vegetal Translations
+  link: http://vegetrans.jandar.net/
+  active: true
+
+- name: Dark Devils Translations
+  link: http://darkdevils.emuxhaven.net/
+  active: true
+
+- name: Rod Traducciones
+  link: http://personales.ya.com/rodtraducciones/noticias.htm/
+  active: true
+
+- name: DaRKWiZaRDX Translations
+  link: http://dwx.romhackhispano.org/
+  active: true
+
+- name: Charnego Translations
+  link: http://www.charnego.tk/
+  active: true
+
+- name: Vagrant Traducciones
+  link: http://vagrant.romhackhispano.org/
+  active: true
+
+- name: Edén Traducciones
+  link: http://eden.romhackhispano.org/
+  active: true
+
+- name: Traducciones del Tío Víctor
+  link: http://tiovictor.romhackhispano.org/
+  active: true
+
+- name: La Web de Dark-N
+  link: http://darkn.romhackhispano.org/darkn
+  active: true
+
+- name: Ereza Translations
+  active: false
+
+- name: Traducciones Andromeda
+  active: false
+
+- name: SpctrmxD Traducciones
+  active: false
+
+- name: Phoenix Flame Translations
+  active: false

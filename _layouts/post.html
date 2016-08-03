@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="container-fluid">
+
+    <div class="col-md-8 col-md-push-4">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+            <header class="post-header">
+                <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+                <p class="post-meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date |
+                        date: "%b %-d, %Y" }}
+                    </time>
+                    {% if page.author %} • <span itemprop="author" itemscope
+                                                 itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{%
+                    endif %}
+                    • <a href="{{ site.github_url }}/{{ page.path }}"><i class="glyphicon glyphicon-pencil"></i> Editar página</a>
+                </p>
+            </header>
+
+            <div class="post-content" itemprop="articleBody">
+                {% if page.todo %}
+                <div class="well">
+                    Actualmente esta página no se ha escrito todavía. Si quieres ser tú el que la empiece,
+                    <a href="{{ site.github_url }}/{{ page.path }}">la puedes editar en markdown desde github</a>.
+                </div>
+                {% endif %}
+                {{ content }}
+            </div>
+
+        </article>
+    </div>
+    <div class="col-md-4 col-md-pull-8">
+        {% include toc.html %}
+    </div>
+</div>

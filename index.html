@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <div class="container-fluid">
+        <div class="col-md-6">
+            <h1 class="page-heading">Página principal</h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-md-6 col-md-push-6">
+            {% assign categories = site.posts|group_by:'category' %}
+            {% for category in categories %}
+            <h4>{{ site.data.categories[category.name].title }}</h4>
+            <ul>
+                {% for post in category.items %}
+                <li>
+                    <a href="{% if post.external_link %}{{ post.external_link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"
+                       class="{% if post.todo %}todo{% endif %}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+        <div class="col-md-6 col-md-pull-6">
+            <h4>Grupos de Romhacking</h4>
+            <ul>
+                {% for group in site.data.groups %}
+                {% if group.link %}
+                <li><a href="{{ group.link }}">{{ group.name }}</a></li>
+                {% else %}
+                <li>{{ group.name }}</li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

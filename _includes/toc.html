@@ -1,0 +1,26 @@
+{% assign categories = site.posts|group_by:'category' %}
+
+<h4>{{ site.data.categories[page.category].title }}</h4>
+
+<ul>
+    {% for post in site.posts %}
+    {% if post.category == page.category %}
+    <li>
+        <a href="{% if post.external_link %}{{ post.external_link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" class="{% if post.todo %}todo{% endif %} {% if post.title == page.title %}current{% endif %}">{{ post.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+{% for category in categories %}
+{% if category.name != page.category %}
+<h4>{{ site.data.categories[category.name].title }}</h4>
+<ul>
+    {% for post in category.items %}
+    <li>
+        <a href="{% if post.external_link %}{{ post.external_link }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" class="{% if post.todo %}todo{% endif %} {% if post.title == page.title %}current{% endif %}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endfor %}
