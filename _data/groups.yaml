@@ -3,19 +3,19 @@
   active: true
 
 - name: Traducciones Magno
-  link: http://magno.romhackhispano.org/
+  link: https://magno.romhackhispano.org
   active: true
 
 - name: Sayans Traductions
-  link: http://sayans.romhackhispano.org/
+  link: https://sayans.romhackhispano.org
   active: true
 
 - name: Fortaleza Romhack
-  link: http://fortaleza.romhackhispano.org/
+  link: https://fortaleza.romhackhispano.org
   active: true
 
 - name: Traducciones Lukas
-  link: http://lukas.romhackhispano.org/
+  link: https://traduccioneslukas.blogspot.com
   active: true
 
 - name: Tales Translations
@@ -35,19 +35,19 @@
   active: true
 
 - name: DaRKWiZaRDX Translations
-  link: http://dwx.romhackhispano.org/
+  link: https://dwx.romhackhispano.org/
   active: true
 
 - name: Charnego Translations
-  link: http://www.charnego.tk/
+  link: https://charnego.krusher.net
   active: true
 
 - name: Vagrant Traducciones
-  link: http://vagrant.romhackhispano.org/
+  link: https://vagrant.romhackhispano.org/
   active: true
 
 - name: Edén Traducciones
-  link: http://eden.romhackhispano.org/
+  link: https://eden.romhackhispano.org
   active: true
 
 - name: Traducciones del Tío Víctor
